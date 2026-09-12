@@ -4,6 +4,8 @@ def cosine_similarity(a: list, b: list) -> float:
     """
     Returns the cosine similarity as a Python float.
     """
+    a=np.array(a)
+    b=np.array(b)
     dot=np.dot(a,b)
     a1=np.linalg.norm(a)
     b1=np.linalg.norm(b)
